@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#FFD39B"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/test_subject_textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Subject"
+            android:textAlignment="viewStart"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="126dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/test_syllabus_textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/test_date_textView11"
+            android:layout_below="@+id/test_date_textView11"
+            android:text="test syllabus"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/test_date_textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/test_subject_textView10"
+            android:layout_below="@+id/test_subject_textView10"
+            android:text="test date "
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/test_subject_textView10"
+                android:layout_marginStart="20dp"
+                android:text="Subject"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView12"
+                android:layout_below="@+id/textView12"
+                android:text="Date"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:textColor="#000"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:textColor="#000"
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView13"
+                android:layout_below="@+id/textView13"
+                android:text="Info"
+                android:paddingBottom="10dp"
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

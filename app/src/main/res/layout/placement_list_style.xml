@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#FFD39B"
+        card_view:cardCornerRadius="6dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/placement_company_textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="17dp"
+                android:layout_toEndOf="@+id/textView2"
+                android:text="Company"
+                android:textColor="#000" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/placement_date_textView11"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="14dp"-->
+            <!--android:layout_marginTop="13dp"-->
+            <!--android:text="Date"-->
+            <!--android:layout_below="@+id/placement_company_textView10"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+            <TextView
+                android:id="@+id/placement_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/placement_company_textView10"
+                android:layout_alignStart="@+id/placement_company_textView10"
+                android:layout_below="@+id/placement_company_textView10"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="19dp"
+                android:text="Info"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/placement_company_textView10"
+                android:layout_marginStart="17dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Company"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/placement_info"
+                android:layout_alignStart="@+id/textView2"
+                android:fontFamily="sans-serif-black"
+                android:text="Info"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
